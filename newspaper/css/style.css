@@ -1,7 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: "Teddy Bear";
+  src: url("../fonts/teddy_bear.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/teddy_bear.eot?#iefix") format("embedded-opentype"), url("../fonts/teddy_bear.woff2") format("woff2"), url("../fonts/teddy_bear.woff") format("woff"), url("../fonts/teddy_bear.ttf") format("truetype"), url("../fonts/teddy_bear.svg#teddy_bear") format("svg"); /* Chrome < 4, Legacy iOS */
+}
 /*Обнуление*/
 * {
   padding: 0;
@@ -125,5 +131,25 @@ h6 {
   top: 0;
   left: 0;
   display: flex;
-  color: red;
+}
+
+header {
+  background: linear-gradient(90deg, #3F79D2, #A5D3FD, #6492DD);
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__name {
+  font-family: "Teddy Bear";
+  font-size: 48px;
+}
+
+.header__nav {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
 }
