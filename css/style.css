@@ -167,11 +167,11 @@ main {
 
 .main-box {
   display: flex;
-  min-height: 700px;
+  min-height: 70vh;
 }
 
 .menu {
-  background-color: #6de60b;
+  background-color: #6FC0B9;
   flex: 0 0 20%;
   padding-top: 10px;
   font-family: "Teddy Bear";
@@ -192,7 +192,7 @@ main {
 
 .newspaper {
   flex: 0 1 80%;
-  background-color: #fcffd0;
+  background-color: #FFE7C5;
   border-radius: 20px;
   margin-left: 10px;
   margin-bottom: 10px;
