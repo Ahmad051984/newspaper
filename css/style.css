@@ -144,6 +144,40 @@ header {
   height: 100px;
 }
 
+@media (max-width: 767px) {
+  .header__burger {
+    position: relative;
+    top: 50px;
+    z-index: 2;
+  }
+  .header__burger::before {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .header__burger span {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+  .header__burger::after {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+}
 .header__name {
   font-family: "Teddy Bear";
   font-size: 48px;
@@ -169,6 +203,11 @@ main {
   display: flex;
   min-height: 70vh;
 }
+@media (max-width: 767px) {
+  .main-box {
+    display: block;
+  }
+}
 
 .menu {
   background-color: #6FC0B9;
@@ -181,13 +220,31 @@ main {
 }
 @media (max-width: 767px) {
   .menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
     font-size: 20px;
+    border-radius: 0;
+    padding-top: 100px;
+    transition-duration: 0.5s;
   }
 }
 
 .menu__item {
   text-align: center;
   margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .menu__item {
+    margin: 15px;
+  }
+}
+
+.menu.active {
+  top: 0px;
+  transition-duration: 0.5s;
 }
 
 .newspaper {
@@ -196,6 +253,13 @@ main {
   border-radius: 20px;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .newspaper {
+    display: block;
+    min-width: 100%;
+    min-height: 50vh;
+  }
 }
 
 footer {
