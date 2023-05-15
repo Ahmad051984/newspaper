@@ -45,6 +45,7 @@ $fontfamily: "Montserrat";
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	max-height: 100%;
 }
 
 //</ОБОЛОЧКА>========================================================================================================================
@@ -91,7 +92,6 @@ $fontfamily: "Montserrat";
 }
 //Стили header---------------------------------
 header{
-	// background: linear-gradient(90deg,#3F79D2,#A5D3FD,#6492DD);
 	flex: 0 0 auto;
 }
 .header {
@@ -111,6 +111,7 @@ header{
 		position: absolute;
 		top: 10px;
 		left: 10px;
+		transition: 0.5s;
 	}
 	.header__burger span{
 		content: '';
@@ -120,6 +121,7 @@ header{
 		position: absolute;
 		top: 15px;
 		left: 10px;
+		transition: 0.5s;
 	}
 	.header__burger::after{
 		content: '';
@@ -129,6 +131,21 @@ header{
 		position: absolute;
 		top: 20px;
 		left: 10px;
+		transition: 0.5s;
+	}
+	.header__burger.active::before{
+		top: 15px;
+		transform: rotate(45deg);
+		transition: 0.5s;
+	}
+	.header__burger.active span{
+		display: none;
+		transition: 0.5s;
+	}
+	.header__burger.active::after{
+		top: 15px;
+		transform: rotate(-45deg);
+		transition: 0.5s;
 	}
 }
 .header__name {
@@ -137,6 +154,8 @@ header{
 	text-align: center;
 	margin-top: 30px;
 	@media (max-width: 767px) {
+		position: relative;
+		z-index: 2;
 		font-size: 30px;
 	}
 }
@@ -149,7 +168,6 @@ header{
 
 main{
 	flex: 1 1 auto;
-	// background: linear-gradient(90deg,#3F79D2,#A5D3FD,#6492DD);
 }
 
 .main-box {
@@ -167,18 +185,20 @@ main{
 	font-size: 30px;
 	border-radius: 20px;
 	margin-bottom: 10px;
+	overflow: hidden;
+	overflow-y: auto;
 	@media (max-width: 767px) {
 		position: absolute;
-		top: -100%;
-		left: 0;
+		top: 80px;
+		left: -100%;
 		width: 100%;
 		height: 100%;
 		font-size: 20px;
 		border-radius: 0;
-		padding-top: 100px;
 		transition-duration: 0.5s;
 	}
 }
+.menu::-webkit-scrollbar { width: 0; }
 .menu__item {
 	text-align: center;
 	margin-top: 50px;
@@ -189,7 +209,8 @@ main{
 .menu__link {
 }
 .menu.active{
-	top: 0px;
+	top: 80px;
+	left: 0px;
 	transition-duration: 0.5s;
 }
 .newspaper {
@@ -202,6 +223,7 @@ main{
 		display: block;
 		min-width: 100%;
 		min-height: 50vh;
+		margin-left: 0px;
 	}
 }
 
