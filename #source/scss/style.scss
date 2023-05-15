@@ -99,9 +99,11 @@ header{
 }
 @media (max-width: 767px) {
 	.header__burger{
-		position: relative;
+		position: absolute;
 		top: 50px;
 		z-index: 2;
+		min-height: 50px;
+		min-width: 50px;
 	}
 	.header__burger::before{
 		content: '';
