@@ -41,7 +41,7 @@ $fontfamily: "Montserrat";
 //<ОБОЛОЧКА>========================================================================================================================
 .wrapper{
 	background: url(../img/bg-main.jpg)  100%/cover no-repeat;
-	overflow: hidden;
+	overflow: auto;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -96,6 +96,7 @@ header{
 }
 .header {
 	height: 100px;
+	position: relative;
 }
 @media (max-width: 767px) {
 	.header__burger{
