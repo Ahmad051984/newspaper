@@ -31,6 +31,9 @@ $fontfamily: "Montserrat";
 		font-size: 20px;
 		font-family: "Teddy Bear";
 		letter-spacing: 10px;
+		@media (max-width: 767px) {
+			letter-spacing: 5px;
+		}
 	}
 
 	&__number {
