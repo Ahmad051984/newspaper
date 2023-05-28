@@ -438,6 +438,7 @@ footer {
   font-size: 20px;
   font-family: "Teddy Bear";
   letter-spacing: 10px;
+  font-weight: 700;
 }
 .newspaper__line-2 {
   margin-top: 15px;
@@ -520,6 +521,40 @@ footer {
   margin-top: 20px;
   text-align: right;
 }
+.newspaper__bottom-row {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .newspaper__bottom-row {
+    width: 80%;
+  }
+}
+.newspaper__bottom-item {
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 190px;
+  height: 100px;
+  background-color: #6FC0B9;
+  border-radius: 10px;
+  box-shadow: 1px -5px 5px 5px #6FC0B9;
+  overflow: hidden;
+}
+.newspaper__bottom-title {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #FFE7C5;
+  color: #6FC0B9;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.newspaper__bottom-text {
+  padding: 5px;
+  text-align: justify;
+}
 
 .question {
   text-align: center;
@@ -540,7 +575,7 @@ p.ps::first-letter {
   font-family: "Montserrat";
 }
 
-.foto {
+.newspaper__foto {
   overflow: hidden;
   margin-top: 5px;
   text-align: right;
