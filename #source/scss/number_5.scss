@@ -1,0 +1,221 @@
+
+
+
+
+//<ШРИФТЫ>========================================================================================================================
+
+//<Подключаем шрифты>=============================================================================================================
+
+//<Подключаем шрифты>=============================================================================================================
+
+//<Шрифт по умолчанию>=============================================================================================================
+$fontfamily: "Montserrat";
+//<Шрифт по умолчанию>=============================================================================================================
+
+//<ШРИФТЫ>========================================================================================================================
+
+//<ПЕРЕМЕННЫЕ>========================================================================================================================
+
+//<ПЕРЕМЕННЫЕ>========================================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>========================================================================================================================
+@import "nullstyle.scss";
+@import "style.scss";
+
+.newspaper {
+	padding: 15px;
+
+	&__main-title {
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+		font-family: "Teddy Bear";
+		letter-spacing: 10px;
+		@media (max-width: 767px) {
+			letter-spacing: 5px;
+		}
+	}
+
+	&__number {
+
+
+
+	}
+
+	&__date {
+
+	}
+	&__line-1{
+		margin-top: 5px;
+		width: 100%;
+		height: 5px;
+		background-color: #6FC0B9;
+	}
+	&__line-1-1{
+		margin-top: 2px;
+		width: 100%;
+		height: 2px;
+		background-color: #6FC0B9;
+	}
+
+	&__second-title {
+		margin-top: 10px;
+		text-align: center;
+		font-size: 20px;
+		font-family: "Teddy Bear";
+		letter-spacing: 10px;
+		font-weight: 700;
+	}
+	&__line-2{
+		margin-top: 15px;
+		width: 100%;
+		height: 2px;
+		background-color: #6FC0B9;
+	}
+	&__line-2-1{
+		margin-top: 2px;
+		width: 100%;
+		height: 5px;
+		background-color: #6FC0B9;
+	}
+	&__third-title {
+		margin-top: 5px;
+		text-align: center;
+	}
+	&__line-3{
+		margin-top: 5px;
+		width: 100%;
+		height: 2px;
+		background-color: #6FC0B9;
+	}
+	&__line-4{
+		margin-top: 1px;
+		width: 100%;
+		height: 2px;
+		background-color: #6FC0B9;
+	}
+
+
+
+
+	&__row {
+		margin-top: 20px;
+		display: flex;
+		@media (max-width: 992px) {
+			display: block;
+		}
+	}
+	&__article-box1 {
+		flex: 1 1 75%;
+		text-align: justify;
+
+	}
+	&__article-box2 {
+		text-align: justify;
+		margin-left: 20px;
+		flex: 1 1 25%;
+		p::first-letter{
+			font-family: "Teddy Bear";
+		}
+		@media (max-width: 992px) {
+			margin-left: 0px;
+			margin-top: 30px;
+		}
+
+		@media (max-width: 767px) {
+			margin-top: 30px;
+			margin-left: 0px;
+		}
+	}
+	&__title {
+		text-align: center;
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 600;
+	}
+	&__article {
+		padding-top: 15px;
+		line-height: 20px;
+		p{
+			text-indent: 20px;
+			padding-bottom: 10px;
+		}
+		p::first-letter{
+			font-family: "Teddy Bear";
+		}
+
+	}
+	&__article-foto-1{
+		float: left;
+		margin-right: 20px;
+	}
+	&__article-foto-2{
+		float: left;
+		margin-right: 20px;
+		@media (max-width: 767px) {
+			float: none;
+			margin: 0;
+		}
+	}
+	&__poem{
+		p{
+			text-indent: 0;
+		}
+		p::first-letter{
+			font-family: "Montserrat";
+		}
+		@media (max-width: 767px) {
+			text-align: center;
+			p{
+				max-width: 290px;
+				margin: 10px auto ;
+				text-align: justify;
+			}
+		}
+	}
+	&__author {
+		margin-top: 20px;
+		text-align: right;
+	}
+	&__bottom-row {
+		margin: 50px auto 0;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		text-align: center;
+		@media (max-width: 1200px) {
+			width: 80%;
+		}
+	}
+
+	&__bottom-item {
+
+		margin-top: 20px;
+		margin-left: 15px;
+		width: 190px;
+		height: 100px;
+		background-color: #6FC0B9;
+		border-radius: 10px;
+		box-shadow: 1px -5px 5px 5px #6FC0B9;
+		overflow: hidden;
+	}
+
+	&__bottom-title {
+		padding: 10px;
+		font-size: 15px;
+		background-color: #FFE7C5;
+		color:#6FC0B9;
+		border-radius:10px;
+		text-transform: uppercase;
+	}
+
+	&__bottom-text {
+		padding: 5px;
+		text-align: justify;
+	}
+	&__foto{
+		overflow: hidden;
+		margin-top: 5px;
+		text-align: right;
+	}
+}
