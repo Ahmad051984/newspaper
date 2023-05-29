@@ -107,13 +107,12 @@ $fontfamily: "Montserrat";
 	}
 	&__article-box1 {
 		flex: 1 1 75%;
-		text-align: justify;
-
 	}
 	&__article-box2 {
 		text-align: justify;
 		margin-left: 20px;
 		flex: 1 1 25%;
+		margin-bottom: 30px;
 		p::first-letter{
 			font-family: "Teddy Bear";
 		}
@@ -125,6 +124,7 @@ $fontfamily: "Montserrat";
 		@media (max-width: 767px) {
 			margin-top: 30px;
 			margin-left: 0px;
+
 		}
 	}
 	&__title {
@@ -139,16 +139,14 @@ $fontfamily: "Montserrat";
 		p{
 			text-indent: 20px;
 			padding-bottom: 10px;
+			text-align: justify;
 		}
 		p::first-letter{
 			font-family: "Teddy Bear";
 		}
 
 	}
-	&__article-foto-1{
-		float: left;
-		margin-right: 20px;
-	}
+
 	&__article-foto-2{
 		float: left;
 		margin-right: 20px;
@@ -157,7 +155,7 @@ $fontfamily: "Montserrat";
 			margin: 0;
 		}
 	}
-	&__poem{
+	&__contest{
 		p{
 			text-indent: 0;
 		}
@@ -211,11 +209,31 @@ $fontfamily: "Montserrat";
 
 	&__bottom-text {
 		padding: 5px;
-		text-align: justify;
+		text-align: center;
 	}
 	&__foto{
 		overflow: hidden;
 		margin-top: 5px;
 		text-align: right;
+	}
+}
+.story-box-row{
+	display: flex;
+	@media (max-width: 500px) {
+		display: block;
+
+	}
+
+}
+.story-box-item{
+	flex:1 1 50%;
+	img{
+		float: right;
+	}
+}
+.story-box-item+.story-box-item{
+	margin-left: 20px;
+	@media (max-width: 500px) {
+		margin-left: 0px;
 	}
 }

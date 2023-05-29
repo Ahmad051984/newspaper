@@ -479,12 +479,12 @@ footer {
 }
 .newspaper__article-box1 {
   flex: 1 1 75%;
-  text-align: justify;
 }
 .newspaper__article-box2 {
   text-align: justify;
   margin-left: 20px;
   flex: 1 1 25%;
+  margin-bottom: 30px;
 }
 .newspaper__article-box2 p::first-letter {
   font-family: "Teddy Bear";
@@ -514,13 +514,10 @@ footer {
 .newspaper__article p {
   text-indent: 20px;
   padding-bottom: 10px;
+  text-align: justify;
 }
 .newspaper__article p::first-letter {
   font-family: "Teddy Bear";
-}
-.newspaper__article-foto-1 {
-  float: left;
-  margin-right: 20px;
 }
 .newspaper__article-foto-2 {
   float: left;
@@ -532,17 +529,17 @@ footer {
     margin: 0;
   }
 }
-.newspaper__poem p {
+.newspaper__contest p {
   text-indent: 0;
 }
-.newspaper__poem p::first-letter {
+.newspaper__contest p::first-letter {
   font-family: "Montserrat";
 }
 @media (max-width: 767px) {
-  .newspaper__poem {
+  .newspaper__contest {
     text-align: center;
   }
-  .newspaper__poem p {
+  .newspaper__contest p {
     max-width: 290px;
     margin: 10px auto;
     text-align: justify;
@@ -584,10 +581,35 @@ footer {
 }
 .newspaper__bottom-text {
   padding: 5px;
-  text-align: justify;
+  text-align: center;
 }
 .newspaper__foto {
   overflow: hidden;
   margin-top: 5px;
   text-align: right;
+}
+
+.story-box-row {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .story-box-row {
+    display: block;
+  }
+}
+
+.story-box-item {
+  flex: 1 1 50%;
+}
+.story-box-item img {
+  float: right;
+}
+
+.story-box-item + .story-box-item {
+  margin-left: 20px;
+}
+@media (max-width: 500px) {
+  .story-box-item + .story-box-item {
+    margin-left: 0px;
+  }
 }
