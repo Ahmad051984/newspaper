@@ -152,20 +152,16 @@ $fontfamily: "Montserrat";
 		margin-right: 20px;
 		@media (max-width: 767px) {
 			float: none;
-			margin: 0;
+			margin: 0 0 10px 0;
 		}
 	}
 	&__contest{
-		p{
-			text-indent: 0;
-		}
-		p::first-letter{
-			font-family: "Montserrat";
+		h2{
+			margin-bottom: 15px;
 		}
 		@media (max-width: 767px) {
 			text-align: center;
 			p{
-				max-width: 290px;
 				margin: 10px auto ;
 				text-align: justify;
 			}
@@ -205,6 +201,7 @@ $fontfamily: "Montserrat";
 		color:#6FC0B9;
 		border-radius:10px;
 		text-transform: uppercase;
+		min-height: 50px;
 	}
 
 	&__bottom-text {
